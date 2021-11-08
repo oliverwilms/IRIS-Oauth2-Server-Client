@@ -11,3 +11,5 @@ services:
     - "57700:52773"
     - "19800:51773"
     - "443:443"
+    volumes:
+    - /efs/ICS/iris.key:/usr/irissys/mgr/iris.key
