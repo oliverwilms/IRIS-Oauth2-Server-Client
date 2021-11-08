@@ -1,4 +1,4 @@
-FROM intersystemsdc/iris-community:2020.1.0.209.0-zpm
+FROM intersystems/irishealth:2020.1.0.215.0.20737
 LABEL maintainer="Guillaume Rongier <guillaume.rongier@intersystems.com>"
 
 # Varaibles
