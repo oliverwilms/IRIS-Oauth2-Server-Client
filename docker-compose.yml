@@ -6,6 +6,12 @@ services:
       context: .
     image: iris_oauth2
     hostname: iris
+    init: true
+    restart: always
+    ulimits:
+      nofile:
+        soft: '8192'
+        hard: '8192'
     command: -b "sudo service apache2 start"
     ports:
     - "57700:52773"
