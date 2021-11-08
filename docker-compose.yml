@@ -8,6 +8,6 @@ services:
     hostname: iris
     command: -b "sudo service apache2 start"
     ports:
-    - "81:52773"
-    - "80:80"
+    - "57700:52773"
+    - "19800:51773"
     - "443:443"
