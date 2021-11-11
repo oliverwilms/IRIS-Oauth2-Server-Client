@@ -127,10 +127,9 @@ ClassMethod CreateServerDefinitionForClient()
 	Set sys.IsDiscovery = 1
 
 	zw ##class(OAuth2.ServerDefinition).GetServerMetadata("https://localhost/oauth2","SSL",.metadata)
-	
-
-	Set sys.Metadata = metadata
-
+	Try {
+		Set sys.Metadata = metadata
+	} Catch { }
 	Set tSC = sys.%Save()
 	zw tSC
 
