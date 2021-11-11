@@ -90,7 +90,7 @@ ClassMethod CreateOauth2Server() As %Status
 	Set sys.KeyAlgorithm = "RSA1_5"
 	Set sys.SSLConfiguration = "SSL"
 	Set tSC = sys.Save()
-
+	zw tSC
 	zn currentNS
 
     Quit tSC
@@ -108,7 +108,7 @@ ClassMethod CreateSSLConfig() As %Status
     Set sys.Type = 0
     Set sys.Enabled = 1
 	Set tSC = sys.%Save()
-
+	zw tSC
 	zn currentNS
 
     Quit tSC
@@ -132,7 +132,7 @@ ClassMethod CreateServerDefinitionForClient()
 	Set sys.Metadata = metadata
 
 	Set tSC = sys.%Save()
-		
+	zw tSC
 
 	zn currentNS
 
@@ -158,7 +158,7 @@ ClassMethod CreateClient()
 	zw sys.RegisterClient()
 
 	Set tSC = sys.%Save()
-
+	zw tSC
     Set tSC = $$$OK
 	
 	zn currentNS
