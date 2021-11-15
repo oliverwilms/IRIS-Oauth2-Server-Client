@@ -1,4 +1,5 @@
-FROM intersystems/irishealth:2020.1.0.215.0.20737
+ARG IMAGE=intersystemsdc/iris-community:latest
+FROM $IMAGE
 LABEL maintainer="Guillaume Rongier <guillaume.rongier@intersystems.com>"
 
 # Varaibles
