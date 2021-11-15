@@ -50,9 +50,9 @@ RUN sudo service apache2 start && iris start $ISC_PACKAGE_INSTANCENAME quietly \
 WORKDIR /home/irisowner/
 
 # housekeeping
-USER root
-RUN rm -f $ISC_PACKAGE_INSTALLDIR/mgr/messages.log $ISC_PACKAGE_INSTALLDIR/mgr/alerts.log $ISC_PACKAGE_INSTALLDIR/mgr/IRIS.WIJ $ISC_PACKAGE_INSTALLDIR/mgr/journal/* \
-    && rm /tmp/password.txt.done && rm -fR /tmp/src
+##USER root
+##RUN rm -f $ISC_PACKAGE_INSTALLDIR/mgr/messages.log $ISC_PACKAGE_INSTALLDIR/mgr/alerts.log $ISC_PACKAGE_INSTALLDIR/mgr/IRIS.WIJ $ISC_PACKAGE_INSTALLDIR/mgr/journal/* \
+##    && rm /tmp/password.txt.done && rm -fR /tmp/src
 
 USER irisowner
 
