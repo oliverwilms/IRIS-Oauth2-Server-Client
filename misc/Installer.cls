@@ -47,6 +47,7 @@ ClassMethod setup(ByRef pVars, pLogLevel As %Integer = 0, pInstaller As %Install
 
 ClassMethod CreateOauth2Server() As %Status
 {
+	Write "Begin CreateOauth2Server",!
 	set currentNS = $Namespace
     zn "%SYS"
     Set tSC = $$$OK
@@ -98,6 +99,7 @@ ClassMethod CreateOauth2Server() As %Status
 
 ClassMethod CreateSSLConfig() As %Status
 {
+	Write "Begin CreateSSLConfig",!
 	set currentNS = $Namespace
     zn "%SYS"
     Set tSC = $$$OK
@@ -116,6 +118,7 @@ ClassMethod CreateSSLConfig() As %Status
 
 ClassMethod CreateServerDefinitionForClient()
 {
+	Write "Begin CreateServerDefinitionForClient",!
 	set currentNS = $Namespace
 	zn "%SYS"
 
@@ -140,6 +143,7 @@ ClassMethod CreateServerDefinitionForClient()
 
 ClassMethod CreateClient()
 {
+	Write "Begin CreateClient",!
 	set currentNS = $Namespace
 	zn "%SYS"
 
