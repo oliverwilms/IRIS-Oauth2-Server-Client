@@ -7,7 +7,7 @@ services:
     image: iris_oauth2
     hostname: iris
     init: true
-    restart: always
+    restart: "no"
     ulimits:
       nofile:
         soft: '8192'
